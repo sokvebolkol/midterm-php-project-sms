@@ -8,7 +8,9 @@
 			<li class="li"><a href="add_class.php"> Class</a></li>
 			<li class="li"><a href="add_sub.php"> Subject</a></li>
 			<li class="li"><a href="add_stud.php"> Students</a></li>
+			<li class="li"><a href="list_stud.php"> List Student</a></li>
 			<li class="li"><a href="student.php"> View Student</a></li>
+			<li class="li"><a href="change_pass.php"> Change Password</a></li>
 			<li class="li"><a href="logout.php">Logout</a></li>		
 		';
 

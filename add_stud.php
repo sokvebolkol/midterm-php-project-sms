@@ -13,7 +13,7 @@ session_start();
 
 <body>
 	<?php include "navbar.php"; ?><br>
-
+	<img src="img/1.jpg" style="margin-left:90px;" class="sha">
 	<div id="section">
 		<?php include "sidebar.php"; ?><br><br><br>
 		<hr><br>
@@ -41,8 +41,9 @@ session_start();
 			<form method="post" enctype="multipart/form-data" action="<?php echo $_SERVER["PHP_SELF"]; ?>">
 				<div class="lbox">
 					<label> ID</label><br>
+					<!-- set student ID by order S1 S2 S3 .......  -->
 					<?php
-					$no = "S001";
+					$no = "S1";
 					$sql = "select * from student order by ID desc limit 1";
 					$res = $db->query($sql);
 					if ($res->num_rows > 0) {
@@ -51,9 +52,6 @@ session_start();
 						$no++;
 						$no = "S" . $no;
 					}
-
-
-
 					?>
 					<input type="text" class="input3" name="rno" style="background:#b1b1b1;" value="<?php echo $no; ?>" readonly><br><br>
 					<label> Student Name</label><br>
@@ -133,7 +131,7 @@ session_start();
 						<option value="2002">2002</option>
 						<option value="2001">2000</option>
 						<option value="2001">1999</option>
-						<option value="2001">1998/option>
+						<option value="2001">1998</option>
 						<option value="2001">1997</option>
 						<option value="2001">1996</option>
 						<option value="2001">1995</option>

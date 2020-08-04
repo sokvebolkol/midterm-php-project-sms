@@ -19,7 +19,7 @@ if (!isset($_SESSION["AID"])) {
 	<img src="img/1.jpg" style="margin-left:90px;" class="sha"> <br><br>
 	<div id="section">
 
-		<h3 class="text">Welcome <?php echo $_SESSION["ANAME"]; ?></h3><br>
+		<h3 class="text">Welcome To Admin Page</h3><br>
 		<hr><br>
 		<div class="content">
 			<h3>View Student Details</h3><br>
@@ -27,7 +27,7 @@ if (!isset($_SESSION["AID"])) {
 				<div class="lbox1">
 					<label>Class</label><br>
 					<select name="cla" required class="input3">
-
+						<!-- Distinct means select only one record if there are the same record  -->
 						<?php
 						$sl = "SELECT DISTINCT(CNAME) FROM class";
 						$r = $db->query($sl);
@@ -38,11 +38,10 @@ if (!isset($_SESSION["AID"])) {
 							}
 						}
 						?>
-
 					</select>
 					<br><br>
-
 				</div>
+
 				<div class="rbox">
 					<label>Section</label><br>
 					<select name="sec" required class="input3">
@@ -61,8 +60,10 @@ if (!isset($_SESSION["AID"])) {
 					</select><br><br>
 				</div>
 				<button type="submit" class="btn" name="view"> View Details</button>
-
-
+				<!-- <button type="button" class="btn"> Back</button> -->
+				<?php
+				echo "<button type='button' class='btn-back'><a href=\"javascript:history.go(-1)\">GO BACK</a></button>";
+				?>
 			</form>
 			<br>
 			<div class="Output">
@@ -85,7 +86,7 @@ if (!isset($_SESSION["AID"])) {
 											<th>Mail</th>
 											<th>Address</th>
 											<th>Class</th>
-											<th>Sec</th>
+											<th>Section</th>
 											<th>Image</th>
 										</tr>
 									
@@ -119,13 +120,10 @@ if (!isset($_SESSION["AID"])) {
 					echo "</table>";
 				}
 
-
 				?>
 
 			</div>
 		</div>
-
-
 	</div>
 
 	<?php include "footer.php"; ?>

@@ -19,7 +19,7 @@ if (!isset($_SESSION["AID"])) {
 	<img src="img/1.jpg" style="margin-left:90px;" class="sha">
 	<div id="section">
 		<?php include "sidebar.php"; ?><br>
-		<h3 class="text">Welcome <?php echo $_SESSION["ANAME"]; ?></h3><br>
+		<h3 class="text">Welcome To Admin Page</h3><br>
 		<hr><br>
 		<div class="content1">
 
@@ -60,10 +60,7 @@ if (!isset($_SESSION["AID"])) {
 				<br>
 				<button type="submit" class="btn" name="submit">Add Class Details</button>
 			</form>
-
-
 		</div>
-
 
 		<div class="tbox">
 			<h3 style="margin-top:30px;"> Class Details</h3><br>
@@ -92,7 +89,7 @@ if (!isset($_SESSION["AID"])) {
 											<td>{$i}</td>
 											<td>{$r["CNAME"]}</td>
 											<td>{$r["CSEC"]}</td>
-											<td><a href='delete.php?id={$r["CID"]}' class='btnr'>Delete</a></td>
+											<td><a href='class_delete.php?id={$r["CID"]}' class='btnr'>Delete</a></td>
 										</tr>
 										";
 					}

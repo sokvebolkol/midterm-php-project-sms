@@ -24,12 +24,12 @@ if (!isset($_SESSION["AID"])) {
 		<?php include "sidebar.php"; ?><br>
 
 		<div class="content">
-			<h3 class="text">Welcome <?php echo $_SESSION["ANAME"]; ?></h3><br>
+			<h3 class="text">Welcome To Admin Page</h3><br>
 			<hr><br>
 			<h3> School Information</h3><br>
-			<img src="img/home.jpg" class="imgs">
+			<img src="img/images.jfif" class="imgs">
 			<p class="para">
-				School Management System is a is a complete school management software designed to automate a school's diverse operations from classes, exams to school events calendar.
+				A student information system, student management system, school administration software or student administration system is a management information system for education establishments used to manage student data.
 			</p>
 
 			<p class="para">
