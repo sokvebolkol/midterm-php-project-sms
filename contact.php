@@ -1,8 +1,3 @@
-<?php
-include "database.php";
-session_start();
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -31,23 +26,9 @@ session_start();
 	</div>
 	<div class="footer">
 		<footer>
-			<p>Copyright &copy; Tutor Joe's </p>
+			<p>Copyright &copy; school,management,system</p>
 		</footer>
 	</div>
-	<script src="js/jquery.js"></script>
-	<script>
-		$(document).ready(function() {
-			$(".error").fadeTo(1000, 100).slideUp(1000, function() {
-				$(".error").slideUp(1000);
-			});
-
-			$(".success").fadeTo(1000, 100).slideUp(1000, function() {
-				$(".success").slideUp(1000);
-			});
-		});
-	</script>
-
-
 
 </body>
 
