@@ -1,3 +1,3 @@
-# School-Management-System
+# Student-Management-System
 
-School Management System In PHP and mysql
+Student Management System In PHP and mysql
