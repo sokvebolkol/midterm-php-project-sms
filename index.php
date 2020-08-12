@@ -13,7 +13,7 @@ session_start();
 
 <body class="back">
 	<?php include "navbar.php"; ?>
-	<img src="img/b1.jpg" width="800">
+	<img src="img/b1.jpg" width="88%">
 
 	<div class="login">
 		<h1 class="heading">Admin Login</h1>

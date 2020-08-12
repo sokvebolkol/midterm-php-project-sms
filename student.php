@@ -16,7 +16,7 @@ if (!isset($_SESSION["AID"])) {
 
 <body>
 	<?php include "navbar.php"; ?><br>
-	<img src="img/1.jpg" style="margin-left:90px;" class="sha"> <br><br>
+	<img src="img/b1.jpg" style="margin-left:90px;" class="sha"> <br><br>
 	<div id="section">
 
 		<h3 class="text">Welcome To Admin Page</h3><br>

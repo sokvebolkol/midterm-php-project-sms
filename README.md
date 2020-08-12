@@ -1,3 +1,4 @@
-# Student-Management-System
+# School-Management-System
 
-Student Management System In PHP and mysql
+School Management System In PHP and mysql
+##Import school.sql file as your database

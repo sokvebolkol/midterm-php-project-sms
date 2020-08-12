@@ -16,7 +16,7 @@ if (!isset($_SESSION["AID"])) {
 
 <body>
 	<?php include "navbar.php"; ?><br>
-	<img src="img/1.jpg" style="margin-left:90px;" class="sha">
+	<img src="img/1.jpg" style="margin-left:90px;" class="sha" width="88%">
 
 	<div id="section">
 		<?php include "sidebar.php"; ?><br><br><br>
